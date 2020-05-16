@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F40D7FF4246CD6D400B25EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D7FF3246CD6D400B25EA2 /* AppDelegate.swift */; };
 		F40D7FF6246CD6D400B25EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D7FF5246CD6D400B25EA2 /* SceneDelegate.swift */; };
-		F40D7FF8246CD6D400B25EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D7FF7246CD6D400B25EA2 /* ViewController.swift */; };
+		F40D7FF8246CD6D400B25EA2 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D7FF7246CD6D400B25EA2 /* PickViewController.swift */; };
 		F40D7FFB246CD6D400B25EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40D7FF9246CD6D400B25EA2 /* Main.storyboard */; };
 		F40D7FFD246CD6DC00B25EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40D7FFC246CD6DC00B25EA2 /* Assets.xcassets */; };
 		F40D8000246CD6DC00B25EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40D7FFE246CD6DC00B25EA2 /* LaunchScreen.storyboard */; };
+		F4C5DC65247074DE00E90DCC /* OutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C5DC64247074DE00E90DCC /* OutcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F40D7FF0246CD6D400B25EA2 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40D7FF3246CD6D400B25EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F40D7FF5246CD6D400B25EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F40D7FF7246CD6D400B25EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F40D7FF7246CD6D400B25EA2 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		F40D7FFA246CD6D400B25EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F40D7FFC246CD6DC00B25EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40D7FFF246CD6DC00B25EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40D8001246CD6DC00B25EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C5DC64247074DE00E90DCC /* OutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				F40D7FF3246CD6D400B25EA2 /* AppDelegate.swift */,
 				F40D7FF5246CD6D400B25EA2 /* SceneDelegate.swift */,
-				F40D7FF7246CD6D400B25EA2 /* ViewController.swift */,
+				F4C5DC64247074DE00E90DCC /* OutcomeViewController.swift */,
+				F40D7FF7246CD6D400B25EA2 /* PickViewController.swift */,
 				F40D7FF9246CD6D400B25EA2 /* Main.storyboard */,
 				F40D7FFC246CD6DC00B25EA2 /* Assets.xcassets */,
 				F40D7FFE246CD6DC00B25EA2 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40D7FF8246CD6D400B25EA2 /* ViewController.swift in Sources */,
+				F40D7FF8246CD6D400B25EA2 /* PickViewController.swift in Sources */,
+				F4C5DC65247074DE00E90DCC /* OutcomeViewController.swift in Sources */,
 				F40D7FF4246CD6D400B25EA2 /* AppDelegate.swift in Sources */,
 				F40D7FF6246CD6D400B25EA2 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidtspf.Roshambo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidtspf.Roshambo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
