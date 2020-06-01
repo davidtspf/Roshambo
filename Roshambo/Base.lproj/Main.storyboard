@@ -25,14 +25,26 @@
                                 <rect key="frame" x="47" y="307" width="75" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="rock"/>
+                                <connections>
+                                    <action selector="pressRockButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6u-4e-T8m"/>
+                                    <segue destination="N4z-mz-YGL" kind="show" id="q8e-op-R5I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0u1-Kb-bCp" userLabel="Paper Button">
                                 <rect key="frame" x="170" y="307" width="75" height="65"/>
                                 <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="pressPaperButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="TGq-TR-imE"/>
+                                    <segue destination="N4z-mz-YGL" kind="show" id="5I6-R9-96e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-IQ-jLg" userLabel="Scissors Button">
                                 <rect key="frame" x="289" y="307" width="75" height="65"/>
                                 <state key="normal" image="scissors"/>
+                                <connections>
+                                    <action selector="pressScissorButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="NA0-vc-3KK"/>
+                                    <segue destination="N4z-mz-YGL" kind="show" id="ROD-QT-dKx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -45,7 +57,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="N4z-mz-YGL" kind="modal" identifier="compareHands" id="qmj-X6-LuG"/>
+                        <outlet property="paperButton" destination="0u1-Kb-bCp" id="Snw-M3-Sc9"/>
+                        <outlet property="rockButton" destination="1JW-v4-rFh" id="6NK-GO-RUk"/>
+                        <outlet property="scissorsButton" destination="bkU-IQ-jLg" id="2ov-8q-hfA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,7 +84,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dfj-z0-EkF"/>
                     <connections>
-                        <outlet property="itsATie" destination="h6e-qQ-Epr" id="5KB-lo-emH"/>
+                        <outlet property="itsATie" destination="pyg-Cn-1zx" id="a89-nS-0mv"/>
                         <outlet property="someView" destination="h6e-qQ-Epr" id="wrI-js-zyj"/>
                     </connections>
                 </viewController>
@@ -79,6 +93,9 @@
             <point key="canvasLocation" x="901" y="133"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="q8e-op-R5I"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="itsATie" width="183" height="200"/>
         <image name="paper" width="75" height="65"/>

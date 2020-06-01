@@ -10,10 +10,23 @@ import Foundation
 import UIKit
 
 class OutcomeViewController: UIViewController {
+    
+    // MARK: Properties
+    
+    var computerValue: Int?
+    var humanValue: Int?
 
     // MARK: Outlets
 
-    @IBOutlet weak var itsATie: UIView!
+    @IBOutlet weak var itsATie: UIImageView!
+    
+    // MARK: Life cycle
+    
+    override func viewWillAppear(_ animated: Bool) {
+    
+        self.itsATie.image = UIImage(named: "d\(self.computerValue)")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
